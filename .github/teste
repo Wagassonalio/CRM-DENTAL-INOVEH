@@ -1,0 +1,32 @@
+run:
+  cpu: 0.5
+  memoryMiB: 512
+  minInstances: 0
+  maxInstances: 2
+  env:
+    - variable: FIREBASE_PROJECT_ID
+      secret: FIREBASE_PROJECT_ID
+    - variable: FIREBASE_CLIENT_EMAIL
+      secret: FIREBASE_CLIENT_EMAIL
+    - variable: FIREBASE_PRIVATE_KEY
+      secret: FIREBASE_PRIVATE_KEY
+    - variable: ZAPI_INSTANCE_ID
+      secret: ZAPI_INSTANCE_ID
+    - variable: ZAPI_TOKEN
+      secret: ZAPI_TOKEN
+    - variable: GOOGLE_PLACES_API_KEY
+      secret: GOOGLE_PLACES_API_KEY
+build:
+  env:
+    - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+      secret: NEXT_PUBLIC_FIREBASE_API_KEY
+    - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+      secret: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+      secret: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+      secret: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+      secret: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+      secret: NEXT_PUBLIC_FIREBASE_APP_ID
